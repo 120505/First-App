@@ -5,7 +5,7 @@ let db;
 let MongoClient=mongo.MongoClient;
 let bodyParser=require("body-parser");
 let cors=require("cors");
-const port="9900";
+const port=process.env.Port ||9900;
 let mongourl="mongodb+srv://avika:avika@123@cluster0.8uqx7.mongodb.net/first?retryWrites=true&w=majority";
 
 
